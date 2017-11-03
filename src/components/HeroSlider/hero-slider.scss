@@ -1,0 +1,24 @@
+.hero-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  flex-direction: column;
+  position: relative;
+  .title{
+    font-size: 4.5em;
+    margin: 0;
+  }
+  .desc{
+    font-size: 2em;
+    font-weight: 300;
+  }
+  .github{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    img{
+      width: 35px;
+    }
+  }
+}
