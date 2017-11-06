@@ -3,7 +3,8 @@
  */
 import React, {Component} from 'react';
 import './side-bar.css';
-import {Link, withRouter} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import {closeSideBar} from '../../utils/sidebar';
 
 class SideBar extends Component {
 
@@ -21,8 +22,8 @@ class SideBar extends Component {
 
     _homeBtnOnClick(){
         this.props.history.push('/');
-        document.querySelector('.side-bar').style.width = '0';
+        closeSideBar();
     }
 }
 
-export default withRouter(SideBar);
+export default SideBar;

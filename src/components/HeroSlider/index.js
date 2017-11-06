@@ -6,6 +6,7 @@ import './hero-slider.css';
 import {Button} from 'tiny-ui';
 import github from '../../assets/github.svg';
 import menu from '../../assets/menu.svg';
+import {openSideBar} from '../../utils/sidebar';
 
 export default class HeroSlider extends Component{
 
@@ -17,12 +18,8 @@ export default class HeroSlider extends Component{
                 <Button type="warning">Coming Soon</Button>
 
                 <a href="https://github.com/wangdicoder/Tiny-UI" target="_blank" rel="noopener noreferrer" className="github"><img src={github} alt="github"/></a>
-                <button className="menu" onClick={this._menuOnPress.bind(this)}><img src={menu} alt="menu"/></button>
+                <button className="menu" onClick={() => {openSideBar()}}><img src={menu} alt="menu"/></button>
             </div>
         );
-    }
-
-    _menuOnPress(){
-        document.querySelector('.side-bar').style.width = '256px';
     }
 }
