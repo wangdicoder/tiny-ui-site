@@ -1,0 +1,12 @@
+@import "../../base";
+
+.side-bar {
+  width: 0;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 10px, rgba(0, 0, 0, 0.23) 0 3px 10px;
+  overflow-x: hidden;
+  @include trans(300ms);
+}

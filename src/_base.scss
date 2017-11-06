@@ -1,0 +1,5 @@
+@mixin trans($time: 400ms){
+  transition: all $time;
+}
+
+$padding-left: 256px;
