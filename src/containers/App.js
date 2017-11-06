@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import './App.css';
-// import {Button} from 'tiny-ui';
 import HomePage from "./Home";
-import ComponentsPage from './Components';
 import SideBar from "../components/SideBar/index";
-import {Route, withRouter} from 'react-router-dom';
+import {Route, withRouter, Switch, Redirect} from 'react-router-dom';
 import SideBarCover from "../components/SideBarCover/SideBarCover";
 import {disabledSideBar, displaySideBar} from '../utils/sidebar';
+
+//get started
+import InstallationPage from './GetStarted/Installation';
+import UsagePage from './GetStarted/Usage';
+import WhyFriendlyPage from './GetStarted/WhyFriendly';
+
+//components
+import ButtonPage from './Components/Button';
+import AvatarPage from './Components/Avatar';
 
 class App extends Component {
 
@@ -15,16 +22,24 @@ class App extends Component {
             <div className="App">
                 <SideBar history={this.props.history}/>
                 <main>
-                    <Route exact path="/" component={HomePage}/>
-                    <Route path="/components" component={ComponentsPage}/>
+                    <Switch>
+                        <Route exact path="/" component={HomePage}/>
+                        <Route path="/get-started/installation" component={InstallationPage}/>
+                        <Route path="/get-started/usage" component={UsagePage}/>
+                        <Route path="/get-started/why-friendly" component={WhyFriendlyPage}/>
+                        <Route path="/components/avatar" component={AvatarPage}/>
+                        <Route path="/components/button" component={ButtonPage}/>
+                        <Redirect from="/get-started" to="/get-started/installation"/>
+                        <Redirect from="/components" to="/components/avatar"/>
+                    </Switch>
                 </main>
                 <SideBarCover/>
             </div>
         );
     }
 
-    componentDidMount(){
-        if(this.props.history.location.pathname !== '/'){
+    componentDidMount() {
+        if (this.props.history.location.pathname !== '/') {
             displaySideBar();
         }
     }

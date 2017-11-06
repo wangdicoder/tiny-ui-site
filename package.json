@@ -10,7 +10,7 @@
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.16",
-    "tiny-ui": "0.0.4"
+    "tiny-ui": "0.0.9"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",

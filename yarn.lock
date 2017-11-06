@@ -6290,12 +6290,13 @@ timers-browserify@^2.0.2:
   dependencies:
     setimmediate "^1.0.4"
 
-tiny-ui@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/tiny-ui/-/tiny-ui-0.0.4.tgz#0cb75e857967e7f82822333cef478b267796e54d"
+tiny-ui@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/tiny-ui/-/tiny-ui-0.0.7.tgz#1876a17b504021de540c6b4d897fa5fcd85fb68a"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"
+    react-dom "^16.0.0"
     uuid "^3.1.0"
 
 tmp@^0.0.33:

@@ -1,3 +1,9 @@
+@import "../base";
+
 .App, #root, main {
   height: inherit;
+}
+
+.default-container{
+  padding-left: $padding-left;
 }

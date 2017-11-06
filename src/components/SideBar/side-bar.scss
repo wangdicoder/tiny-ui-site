@@ -9,4 +9,12 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0 3px 10px, rgba(0, 0, 0, 0.23) 0 3px 10px;
   overflow-x: hidden;
   @include trans(300ms);
+  .list-container{
+    border: none;
+    border-radius: 0;
+  }
+  .list{
+    display: flex;
+    flex-direction: column;
+  }
 }
