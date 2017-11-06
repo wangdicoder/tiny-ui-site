@@ -6,7 +6,7 @@ import ComponentsPage from './Components';
 import SideBar from "../components/SideBar/index";
 import {Route, withRouter} from 'react-router-dom';
 import SideBarCover from "../components/SideBarCover/SideBarCover";
-import {disabledSideBar} from '../utils/sidebar';
+import {disabledSideBar, displaySideBar} from '../utils/sidebar';
 
 class App extends Component {
 
@@ -21,6 +21,12 @@ class App extends Component {
                 <SideBarCover/>
             </div>
         );
+    }
+
+    componentDidMount(){
+        if(this.props.history.location.pathname !== '/'){
+            displaySideBar();
+        }
     }
 
     // listen to the router changes

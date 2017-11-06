@@ -20,3 +20,7 @@ export const disabledSideBar = () => {
     cover.style.opacity = '0';
     cover.style.pointerEvents = 'none';
 };
+
+export const displaySideBar = () => {
+    document.querySelector('.side-bar').style.width = '256px';
+};

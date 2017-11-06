@@ -10,6 +10,7 @@ export default class ComponentsPage extends Component{
         return (
             <div className="components-container">
                     components
+                <button>ddsd</button>
             </div>
         );
     }
