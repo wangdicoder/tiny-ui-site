@@ -3,14 +3,15 @@
  */
 import React, {Component} from 'react';
 import '../../App.css';
+import APIHeader from "../../../components/APIHeader/index";
 
 export default class InstallationPage extends Component{
 
     render(){
         return (
             <div className="default-container">
-                Installation
-
+                <APIHeader title="Installation"/>
+                TBA
             </div>
         );
     }

@@ -11,13 +11,13 @@ export default class InputPage extends Component{
         return (
             <div className="default-container">
                 <APIHeader title="Input">
-                    This button is used to add dimension to mostly flat layouts and emphasizes important functions on your page.
+                    This component specifies an input field where the user can enter data.
                 </APIHeader>
 
                 <h2 className="subtitle">Examples</h2>
-
+                TBA
                 <h2 className="subtitle">API</h2>
-
+                TBA
             </div>
         );
     }

@@ -11,4 +11,16 @@
     font-weight: 500;
     margin-top: 35px;
   }
+  .example-section{
+    .row{
+      display: flex;
+    }
+    .col{
+      flex: 1;
+    }
+    .col-display-row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

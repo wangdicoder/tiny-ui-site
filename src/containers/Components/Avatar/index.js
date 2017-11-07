@@ -11,12 +11,13 @@ export default class AvatarPage extends Component{
         return (
             <div className="default-container">
                 <APIHeader title="Avatar">
-                    This button is used to add dimension to mostly flat layouts and emphasizes important functions on your page.
+                    Avatars can be used to represent people or objects.
                 </APIHeader>
 
                 <h2 className="subtitle">Examples</h2>
-
+                TBA
                 <h2 className="subtitle">API</h2>
+                TBA
             </div>
         );
     }
