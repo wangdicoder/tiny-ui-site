@@ -14,6 +14,8 @@ import WhyFriendlyPage from './GetStarted/WhyFriendly';
 //components
 import ButtonPage from './Components/Button';
 import AvatarPage from './Components/Avatar';
+import FabButtonPage from './Components/FabButton';
+import InputPage from './Components/Input';
 
 class App extends Component {
 
@@ -29,6 +31,8 @@ class App extends Component {
                         <Route path="/get-started/why-friendly" component={WhyFriendlyPage}/>
                         <Route path="/components/avatar" component={AvatarPage}/>
                         <Route path="/components/button" component={ButtonPage}/>
+                        <Route path="/components/input" component={InputPage}/>
+                        <Route path="/components/fab-button" component={FabButtonPage}/>
                         <Redirect from="/get-started" to="/get-started/installation"/>
                         <Redirect from="/components" to="/components/avatar"/>
                     </Switch>

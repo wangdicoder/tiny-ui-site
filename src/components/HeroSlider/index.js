@@ -3,7 +3,6 @@
  */
 import React, {Component} from 'react';
 import './hero-slider.css';
-import ReactDOM from 'react-dom';
 import {Button} from 'tiny-ui';
 import github from '../../assets/github.svg';
 import menu from '../../assets/menu.svg';

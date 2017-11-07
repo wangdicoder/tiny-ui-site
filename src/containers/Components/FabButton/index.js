@@ -5,12 +5,12 @@ import React, {Component} from 'react';
 import '../../App.css';
 import APIHeader from "../../../components/APIHeader/index";
 
-export default class ButtonPage extends Component{
+export default class FabButtonPage extends Component{
 
     render(){
         return (
             <div className="default-container">
-                <APIHeader title="Button">
+                <APIHeader title="Fab Button">
                     This button is used to add dimension to mostly flat layouts and emphasizes important functions on your page.
                 </APIHeader>
 
