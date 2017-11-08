@@ -14,7 +14,7 @@ class SideBar extends Component {
         return (
             <div className="side-bar">
                 <button className="home-btn" onClick={this._homeBtnOnClick.bind(this)}>Tiny-UI</button>
-                <Accordion activeKeys={[]} className="list-container">
+                <Accordion activeKeys={['0','1','2']} className="list-container">
                     <Accordion.Panel header="Get Started" isArrowOnRight={true} headerClassName="header-panel">
                         <div className="list">
                             <NavLink to="/get-started/installation" activeClassName="active">Installation</NavLink>

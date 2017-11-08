@@ -100,6 +100,7 @@ export default class ButtonPage extends Component {
                             <Button type="info">Normal</Button>
                             <Button type="info" isRound={true}>Round</Button>
                             <Button type="info" disabled={true}>Disable</Button>
+                            <Button type="info" disabled={true} isOutline={true}>Disable</Button>
                         </div>
                     </div>
                 </section>

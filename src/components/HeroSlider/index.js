@@ -17,7 +17,7 @@ export default class HeroSlider extends Component{
                 <h2 className="desc">A Friendly UI Component Set for React</h2>
                 <Button type="warning">Coming Soon</Button>
 
-                <a href="https://github.com/wangdicoder/Tiny-UI" target="_blank" rel="noopener noreferrer" className="github"><img src={github} alt="github"/></a>
+                <a href="https://github.com/wangdicoder/tiny-ui" target="_blank" rel="noopener noreferrer" className="github"><img src={github} alt="github"/></a>
                 <button className="menu" onClick={() => {openSideBar()}}><img src={menu} alt="menu"/></button>
             </div>
         );
