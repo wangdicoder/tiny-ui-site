@@ -25,6 +25,7 @@ class SideBar extends Component {
                     <Accordion.Panel header="Components" isArrowOnRight={true} headerClassName="header-panel">
                         <div className="list">
                             <NavLink to="/components/button" activeClassName="active">Button</NavLink>
+                            <NavLink to="/components/switch" activeClassName="active">Switch</NavLink>
                             <NavLink to="/components/avatar" activeClassName="active">Avatar</NavLink>
                             <NavLink to="/components/fab-button" activeClassName="active">Fab Button</NavLink>
                             <NavLink to="/components/input" activeClassName="active">Input</NavLink>

@@ -16,6 +16,7 @@ import ButtonPage from './Components/Button';
 import AvatarPage from './Components/Avatar';
 import FabButtonPage from './Components/FabButton';
 import InputPage from './Components/Input';
+import SwitchPage from './Components/Switch';
 
 class App extends Component {
 
@@ -33,6 +34,7 @@ class App extends Component {
                         <Route path="/components/button" component={ButtonPage}/>
                         <Route path="/components/input" component={InputPage}/>
                         <Route path="/components/fab-button" component={FabButtonPage}/>
+                        <Route path="/components/switch" component={SwitchPage}/>
                         <Redirect from="/get-started" to="/get-started/installation"/>
                         <Redirect from="/components" to="/components/avatar"/>
                     </Switch>
