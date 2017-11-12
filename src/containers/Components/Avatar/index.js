@@ -27,6 +27,7 @@ export default class AvatarPage extends Component{
                 <Avatar raised backgroundColor="#e91e63">MS</Avatar>
                 <Avatar raised backgroundColor="#f44336" size="40px">Ti</Avatar>
                 <Avatar raised backgroundColor="#4caf50" size="90px" borderRadius="0">LG</Avatar>
+                <Avatar raised backgroundColor="#4caf50" size="90px" borderRadius="7px">LG</Avatar>
 
                 <h2 className="subtitle">API</h2>
                 <APITable data={data}/>
