@@ -4,6 +4,19 @@
   height: inherit;
 }
 
+.App .menu{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  img {
+    width: 25px;
+  }
+}
+
 .default-container {
   padding: 40px 70px 40px $padding-left + 70px;
   .subtitle {
@@ -22,6 +35,16 @@
       float: left;
     }
   }
+}
 
+@media screen and (max-width: 750px){
+  .default-container {
+    padding-left: 70px;
+  }
+}
 
+@media screen and (max-width: 500px){
+  .default-container {
+    padding: 50px 30px;
+  }
 }

@@ -4,7 +4,8 @@ import HomePage from "./Home";
 import SideBar from "../components/SideBar/index";
 import {Route, withRouter, Switch, Redirect} from 'react-router-dom';
 import SideBarCover from "../components/SideBarCover/SideBarCover";
-import {disabledSideBar, displaySideBar} from '../utils/sidebar';
+import {disabledSideBar, displaySideBar, closeSideBar} from '../utils/sidebar';
+import menu from '../assets/menu1.svg';
 
 //get started
 import InstallationPage from './GetStarted/Installation';
@@ -26,6 +27,9 @@ class App extends Component {
         return (
             <div className="App">
                 <SideBar history={this.props.history}/>
+                <button className="menu" onClick={() => {
+                    displaySideBar()
+                }}><img src={menu} alt="menu"/></button>
                 <main>
                     <Switch>
                         <Route exact path="/" component={HomePage}/>
@@ -52,6 +56,14 @@ class App extends Component {
         if (this.props.history.location.pathname !== '/') {
             displaySideBar();
         }
+
+        window.addEventListener('resize', (evt) => {
+            if (document.body.clientWidth <= 750) {
+                closeSideBar();
+            }else{
+                displaySideBar();
+            }
+        });
     }
 
     // listen to the router changes
@@ -59,6 +71,10 @@ class App extends Component {
         this.unlisten = this.props.history.listen((location, action) => {
             if (location.pathname !== '/') {
                 disabledSideBar();
+            }
+
+            if (document.body.clientWidth <= 750) {
+                closeSideBar();
             }
         });
     }
