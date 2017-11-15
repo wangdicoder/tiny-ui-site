@@ -11,12 +11,20 @@ export const routers = [
         route: 'avatar',
         name: 'Avatar'
     },
+    // {
+    //     route: 'fab-button',
+    //     name: 'Fab Button'
+    // },
+    // {
+    //     route: 'input',
+    //     name: 'Input'
+    // },
     {
-        route: 'fab-button',
-        name: 'Fab Button'
+        route: 'spinner',
+        name: 'Spinner'
     },
     {
-        route: 'input',
-        name: 'Input'
-    },
+        route: 'alert',
+        name: 'Alert'
+    }
 ];

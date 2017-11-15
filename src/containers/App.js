@@ -17,6 +17,8 @@ import AvatarPage from './Components/Avatar';
 import FabButtonPage from './Components/FabButton';
 import InputPage from './Components/Input';
 import SwitchPage from './Components/Switch';
+import SpinnerPage from './Components/Spinner';
+import AlertPage from './Components/Alert';
 
 class App extends Component {
 
@@ -35,6 +37,8 @@ class App extends Component {
                         <Route path="/components/input" component={InputPage}/>
                         <Route path="/components/fab-button" component={FabButtonPage}/>
                         <Route path="/components/switch" component={SwitchPage}/>
+                        <Route path="/components/spinner" component={SpinnerPage}/>
+                        <Route path="/components/alert" component={AlertPage}/>
                         <Redirect from="/get-started" to="/get-started/installation"/>
                         <Redirect from="/components" to="/components/avatar"/>
                     </Switch>

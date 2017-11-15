@@ -39,6 +39,6 @@ export const data = [
         name: 'className',
         type: 'string',
         default: '-',
-        desc: 'The CSS class name of the root element.'
+        desc: 'the CSS class name of the root element'
     },
 ];
