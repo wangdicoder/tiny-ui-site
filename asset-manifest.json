@@ -1,14 +1,19 @@
 {
-  "main.css": "static/css/main.b542a593.css",
-  "main.css.map": "static/css/main.b542a593.css.map",
-  "main.js": "static/js/main.3ba1e2f5.js",
-  "main.js.map": "static/js/main.3ba1e2f5.js.map",
+  "main.css": "static/css/main.d3355e1f.css",
+  "main.css.map": "static/css/main.d3355e1f.css.map",
+  "main.js": "static/js/main.130d18de.js",
+  "main.js.map": "static/js/main.130d18de.js.map",
   "static/media/background.svg": "static/media/background.fdd1f873.svg",
   "static/media/github.svg": "static/media/github.e097a71d.svg",
   "static/media/loading.svg": "static/media/loading.9d6d1240.svg",
   "static/media/loading1.svg": "static/media/loading1.19f5197a.svg",
   "static/media/loading2.svg": "static/media/loading2.f5476966.svg",
+  "static/media/lunch.svg": "static/media/lunch.af4f41fc.svg",
+  "static/media/meeting.svg": "static/media/meeting.2b5b0156.svg",
   "static/media/menu.svg": "static/media/menu.22a6cb97.svg",
+  "static/media/menu1.svg": "static/media/menu1.6d5528d9.svg",
+  "static/media/register.svg": "static/media/register.d6774d27.svg",
+  "static/media/rest.svg": "static/media/rest.36ef0260.svg",
   "static/media/snow.svg": "static/media/snow.d718c50d.svg",
   "static/media/synchronize.svg": "static/media/synchronize.e389e469.svg"
 }
