@@ -20,6 +20,9 @@ import InputPage from './Components/Input';
 import SwitchPage from './Components/Switch';
 import SpinnerPage from './Components/Spinner';
 import AlertPage from './Components/Alert';
+import TimelinePage from './Components/Timeline';
+import BadgePage from './Components/Badge';
+import MessagePage from './Components/Message'
 
 class App extends Component {
 
@@ -43,6 +46,9 @@ class App extends Component {
                         <Route path="/components/switch" component={SwitchPage}/>
                         <Route path="/components/spinner" component={SpinnerPage}/>
                         <Route path="/components/alert" component={AlertPage}/>
+                        <Route path="/components/timeline" component={TimelinePage}/>
+                        <Route path="/components/message" component={MessagePage}/>
+                        <Route path="/components/badge" component={BadgePage}/>
                         <Redirect from="/get-started" to="/get-started/installation"/>
                         <Redirect from="/components" to="/components/avatar"/>
                     </Switch>

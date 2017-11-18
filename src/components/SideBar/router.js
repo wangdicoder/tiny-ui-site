@@ -26,5 +26,17 @@ export const routers = [
     {
         route: 'alert',
         name: 'Alert'
-    }
+    },
+    {
+        route: 'timeline',
+        name: 'Timeline'
+    },
+    {
+        route: 'message',
+        name: 'Message'
+    },
+    {
+        route: 'badge',
+        name: 'Badge'
+    },
 ];

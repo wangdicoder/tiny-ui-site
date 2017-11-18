@@ -1,0 +1,18 @@
+.message-custom{
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  .custom-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
